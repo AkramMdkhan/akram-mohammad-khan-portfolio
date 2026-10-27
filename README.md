@@ -76,9 +76,9 @@ public/                 Images and resume
 
 ## Contact
 
-- Email: YOUR-EMAIL
+- Email: akrammdkhan10@gmail.com
 - GitHub: [AkramMdkhan](https://github.com/AkramMdkhan)
-- LinkedIn: YOUR-LINKEDIN-LINK
+- LinkedIn: www.linkedin.com/akrammdkhan
 
 ---
 
