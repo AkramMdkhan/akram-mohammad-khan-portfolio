@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website for **Akram Mohammad Khan**, a MERN Stack Developer. It presents my skills, projects and contact details in a clean dark design with smooth animations.
 
-**Live site:** https://YOUR-VERCEL-LINK.vercel.app
+**Live site:** https://akram-mohammad-khan-portfolio.vercel.app/
 
 ## Features
 
