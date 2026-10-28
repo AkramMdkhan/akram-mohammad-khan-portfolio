@@ -44,7 +44,7 @@ export const projects: Project[] = [
   {
     slug: "fit-log",
     name: "Fit Log",
-    image: "/projects/fitlog.jpg",
+    image: "/projects/fitlog.JPG",
     shortDescription:
       "A workout planner where you browse workouts, plan your day and track what you finish.",
     description:
