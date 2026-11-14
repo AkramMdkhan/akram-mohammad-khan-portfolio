@@ -180,7 +180,7 @@ export const projects: Project[] = [
     description:
       "DevStack lets visitors explore popular development technologies in a card grid, with details like category, difficulty and rating. They can add technologies to a Your Stack sidebar, remove one, or clear everything, and duplicates are blocked. Toast messages confirm every action, and a loading state shows while the data loads.",
     techStack: ["React", "TypeScript", "Vite", "Tailwind CSS", "react-toastify"],
-    liveUrl: "https://brilliant-chaja-01e52a.netlify.app/",
+    liveUrl: "https://dev-stack-by-akram.netlify.app",
     githubUrl: "https://github.com/AkramMdkhan/B-14-Assignment-5-Dev-Stack-",
     challenges: [
       "Keeping the stack state in sync across add, remove and remove-all while blocking duplicates.",
