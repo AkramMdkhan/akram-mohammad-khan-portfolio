@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import type { IconType } from "react-icons";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
@@ -15,7 +16,8 @@ import {
   SiTailwindcss,
   SiJavascript,
 } from "react-icons/si";
-import { FiDownload } from "react-icons/fi";
+import { FiEye } from "react-icons/fi";
+import ResumeModal from "@/components/ResumeModal";
 
 type Social = {
   name: string;
@@ -86,6 +88,7 @@ const popIn: Variants = {
 
 export default function Hero() {
   const reduceMotion = useReducedMotion();
+  const [resumeOpen, setResumeOpen] = useState(false);
 
   return (
     <section id="home" className="relative overflow-hidden bg-slate-950">
@@ -139,14 +142,14 @@ export default function Hero() {
               variants={fadeUp}
               className="mt-6 flex flex-wrap items-center gap-4"
             >
-              <a
-                href="/resume.pdf"
-                download
+              <button
+                type="button"
+                onClick={() => setResumeOpen(true)}
                 className="inline-flex items-center gap-2 rounded-full border border-cyan-400/50 bg-cyan-500/20 px-6 py-3 text-sm font-semibold text-cyan-100 shadow-[0_0_25px_rgba(34,211,238,0.25)] transition hover:-translate-y-0.5 hover:bg-cyan-500/30"
               >
-                <FiDownload />
-                Download Resume/CV
-              </a>
+                <FiEye />
+                View Resume/CV
+              </button>
 
               <div className="flex items-center gap-3">
                 {socials.map(({ name, href, icon: Icon }) => (
@@ -241,7 +244,9 @@ export default function Hero() {
           ))}
         </div>
       </motion.div>
+
+      {/* resume preview modal */}
+      <ResumeModal open={resumeOpen} onClose={() => setResumeOpen(false)} />
     </section>
   );
 }
-
