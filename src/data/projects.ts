@@ -13,6 +13,41 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "pizzahub",
+    name: "PizzaHub",
+    image: "/projects/pizzabanner.jpg",
+    shortDescription:
+      "A role-based pizza ordering platform for customers, vendors and admins.",
+    description:
+      "PizzaHub is a full-stack pizza ordering and delivery platform with three roles. Customers browse the menu with search, category and location filters and price sorting, place orders with delivery details, and track or cancel pending orders from their dashboard. Vendors add and manage menu items, accept or reject incoming orders, and upgrade from the Free plan (3 active items) to Premium through Stripe Checkout, which is activated by verified webhooks. Admins manage users, approve or reject menu items before they go live, and review all subscription transactions. Users sign in with email or Google, and role-based route guards and JWT-verified API requests keep each dashboard private.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Framer Motion",
+      "Better Auth",
+      "JWT",
+      "Stripe",
+      "Express.js",
+      "MongoDB",
+    ],
+    liveUrl: "https://pizzahub-client-beige.vercel.app",
+    githubUrl: "https://github.com/AkramMdkhan/pizzahub-client",
+    challenges: [
+      "Verifying Stripe webhooks on the Express server. The route needed the raw request body and had to be mounted before the JSON parser so Premium only activates on signed events.",
+      "Sharing login between the Next.js client and the separate Express server, using a shared JWT secret and middleware that checks both the token and the user's role.",
+      "Enforcing the order rules on the server: no ordering your own items, no duplicate active order for the same item and date, and one-time accept or reject by the vendor.",
+      "Fixing a live \"MongoTopologyClosedError\" on Vercel by tuning the MongoDB connection pool, after dashboards crashed with a session error in production.",
+    ],
+    improvements: [
+      "Add customer reviews and ratings for menu items.",
+      "Show an order status timeline from placed to delivered.",
+      "Send email notifications when an order is accepted or rejected.",
+      "Add a wishlist so customers can save favourite pizzas.",
+    ],
+  },
+  {
     slug: "shebabondhu",
     name: "ShebaBondhu",
     image: "/projects/shebabondhu.JPG",
