@@ -16,7 +16,7 @@ import {
   SiTailwindcss,
   SiJavascript,
 } from "react-icons/si";
-import { FiEye } from "react-icons/fi";
+import { FiEye, FiDownload } from "react-icons/fi";
 import ResumeModal from "@/components/ResumeModal";
 
 type Social = {
@@ -46,6 +46,7 @@ const socials: Social[] = [
   },
 ];
 // ✏️ END OF EDIT AREA
+
 
 const stats: Stat[] = [
   { value: "MERN", label: "Core Stack" },
