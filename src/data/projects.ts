@@ -15,7 +15,7 @@ export const projects: Project[] = [
   {
     slug: "pizzahub",
     name: "PizzaHub",
-    image: "/projects/pizzabanner.jpg",
+    image: "/projects/pizzahub.jpg",
     shortDescription:
       "A role-based pizza ordering platform for customers, vendors and admins.",
     description:
