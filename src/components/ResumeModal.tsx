@@ -9,7 +9,7 @@ type ResumeModalProps = {
   onClose: () => void;
 };
 
-const RESUME_PDF = "https://drive.google.com/file/d/1CohxEl0EnEXOJPswLZ6IqjbCb5w7hrnr/view?usp=drive_link";
+const RESUME_PDF = "https://drive.google.com/file/d/1SiGFxANMtPuxNGz8ThcsX6q1A9N2Rmfb/view?usp=sharing";
 
 // ✏️ one image per page. Add "/resume-2.png" here if you have 2 pages
 const RESUME_PAGES = ["/resume-1.JPG"];
